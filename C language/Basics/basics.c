@@ -21,3 +21,75 @@ int main(){
     printf("Hello World!");
     return 0;
 }
+ /*
+ Line 1: #include <stdio.h> tells C to include a header file. This header lets us use input/output functions such as printf() (used in line 4).
+
+Line 2: A blank line. C ignores extra spaces and blank lines, but we use them to make the code easier to read.
+
+Line 3: main() is a special function. Your program starts running here. Any code inside the curly brackets {} will be executed.
+
+Line 4: printf() is a function used to output (print) text to the screen. In our example, it prints Hello World!.
+
+Note: Every C statement ends with a semicolon ;
+
+Note: The body of int main() could also be written as:
+int main(){printf("Hello World!");return 0;}
+
+Remember: The compiler ignores extra spaces and new lines, but using multiple lines makes code easier to read.
+
+Line 5: return 0 ends the main() function and sends a value back to the operating system.
+
+Returning 0 usually means "everything worked". You will learn more about return values later.
+
+Line 6: Do not forget the closing curly bracket } to end the main() function.*/
+
+
+//C Output
+
+// printf() used
+
+// for new line (\n) is used
+/* What is \n exactly?
+\n is called an escape sequence.
+
+Escape sequences start with a backslash and represent special characters that cannot be typed directly.
+
+In this case, \n tells the program to move the cursor to the beginning of the next line.
+
+Here are some other common escape sequences:
+
+Escape Sequence	    Description
+
+\t	               Inserts a horizontal tab	
+\\	               Inserts a backslash character (\)	
+\"	               Inserts a double quote character
+
+*/
+
+//Comments in C
+
+/*Comments are notes for humans. They help explain code and make it easier to read.
+
+They can also be used to temporarily "disable" code while testing.
+
+Comments can be single-line or multi-line.
+
+Single-line Comments : Single-line comments start with two forward slashes (//).
+
+Multi-line Comments: Multi-line comments start with /* and end with */
+
+
+//C Variables
+
+/*
+Variables are containers for storing data values, like numbers and characters.
+
+You can think of a variable as a named box where you keep a value that can be used later.
+
+In C, variables must have a specific type, which tells the program what kind of data the variable can store.
+
+int - stores whole numbers (integers), such as 123 or -123
+float - stores numbers with decimals, such as 19.99 or -19.99
+char - stores a single character, such as 'a' or 'B'. Characters are surrounded by single quotes*/
+
+
