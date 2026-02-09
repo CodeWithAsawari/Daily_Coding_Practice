@@ -6,7 +6,9 @@ int a,b;
 scanf("%d",&a);
 printf("Enter the second number: ");
 scanf("%d",&b);
-char op="+-*/";
+printf("Enter the operator (+, -, *, /): ");
+char op = '+';
+scanf(" %c",&op);
 switch(op){
     case '+':printf("The sum is %d",a+b);break;
     case '-':printf("The difference is %d",a-b);break;
