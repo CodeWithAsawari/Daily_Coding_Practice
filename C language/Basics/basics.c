@@ -92,4 +92,26 @@ int - stores whole numbers (integers), such as 123 or -123
 float - stores numbers with decimals, such as 19.99 or -19.99
 char - stores a single character, such as 'a' or 'B'. Characters are surrounded by single quotes*/
 
+//Declaring (Creating) Variables
+
+//Syntax
+//type variableName = value;
+
+//Output Variables   printf()
+
+
+//C Format Specifiers
+/*
+Format specifiers are used together with the printf() function to print variables.
+
+You can think of a format specifier as a placeholder that tells C what kind of value will be printed.
+
+A format specifier always starts with a percentage sign %, followed by a letter.
+
+For example, to output the value of an int variable, use the format specifier %d surrounded by double quotes (""), inside the printf() function:
+
+Example */
+int myNum = 15;
+printf("%d", myNum); // Outputs 15
+
 
