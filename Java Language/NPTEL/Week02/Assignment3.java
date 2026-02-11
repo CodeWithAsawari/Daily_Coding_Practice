@@ -1,5 +1,4 @@
-package Daily_Coding_Practice.Java Language.NPTEL.Week02;
-
+import java.util.Scanner;
 public class Assignment3 {
      public static void main(String[] args) {
 
