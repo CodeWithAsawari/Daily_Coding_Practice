@@ -1,0 +1,26 @@
+package Daily_Coding_Practice.Java Language.NPTEL.Week02;
+
+public class Assignment4 {
+    static class Rectangle {
+        int length;
+        int width;
+    }
+
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        int l = sc.nextInt();
+        int w = sc.nextInt();
+
+        Rectangle rect = new Rectangle();
+        rect.length = l;
+        rect.width = w;
+System.out.println(
+    "Sum of length and width is: " +
+    (rect.length + rect.width)
+);
+// Object members are accessed using dot operator
+sc.close();
+    }
+}
