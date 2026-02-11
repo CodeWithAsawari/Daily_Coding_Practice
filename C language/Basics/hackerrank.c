@@ -220,3 +220,120 @@ int main() {
     return 0;
 }
 
+// CHALLENGE 7
+//For Loop in C
+/* Objective
+
+In this challenge, you will learn the usage of the for loop, which is a programming language statement which allows code to be executed until a terminal condition is met. They can even repeat forever if the terminal condition is never met.
+Task
+
+For each integer  in the interval  (given as input) :
+
+If , then print the English representation of it in lowercase. That is "one" for , "two" for , and so on.
+Else if  and it is an even number, then print "even".
+Else if  and it is an odd number, then print "odd */
+
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+
+
+int main() 
+{
+    int a, b;
+    scanf("%d\n%d", &a, &b);
+  	// Complete the code.
+
+    return 0;
+}
+
+// Challege 8
+// Bitwise Operators
+ #include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+//Complete the following function.
+
+
+void calculate_the_maximum(int n, int k) {
+  //Write your code here.
+}
+
+int main() {
+    int n, k;
+  
+    scanf("%d %d", &n, &k);
+    calculate_the_maximum(n, k);
+ 
+    return 0;
+}
+
+// CHALLENGE 9
+// Printing Pattern Using Loops
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() 
+{
+
+    int n;
+    scanf("%d", &n);
+  	// Complete the code to print the pattern.
+    return 0;
+}
+// CHALLENGE 10
+// 1D Arrays in C
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+    return 0;
+}
+
+// CHALLENGE 11
+// Array Reversal
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int num, *arr, i;
+    scanf("%d", &num);
+    arr = (int*) malloc(num * sizeof(int));
+    for(i = 0; i < num; i++) {
+        scanf("%d", arr + i);
+    }
+
+
+    /* Write the logic to reverse the array. */
+
+    for(i = 0; i < num; i++)
+        printf("%d ", *(arr + i));
+    return 0;
+}
+
+// CHALLENGE 12
+// Printing Tokens
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+
+    char *s;
+    s = malloc(1024 * sizeof(char));
+    scanf("%[^\n]", s);
+    s = realloc(s, strlen(s) + 1);
+    //Write your logic to print the tokens of the sentence here.
+    return 0;
+}
