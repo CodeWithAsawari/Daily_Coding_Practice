@@ -126,3 +126,97 @@ int main() {
     
     return 0;
 }
+// CHALLENGE 5
+// Pointers in C
+/* Objective
+
+In this challenge, you will learn to implement the basic functionalities of pointers in C. A pointer in C is a way to share a memory address among different contexts (primarily functions).
+Task
+
+Complete the function void update(int *a,int *b). It receives two integer pointers, int* a and int* b. Set the value of  to their sum, and  to their absolute difference. There is no return value, and no return statement is needed.
+
+*/
+#include <stdio.h>
+
+void update(int *a,int *b) {
+    // Complete this function    
+}
+
+int main() {
+    int a, b;
+    int *pa = &a, *pb = &b;
+    
+    scanf("%d %d", &a, &b);
+    update(pa, pb);
+    printf("%d\n%d", a, b);
+
+    return 0;
+}
+// CHALLENGE 6
+// Conditional Statements in C
+/*Objective
+
+if and else are two of the most frequently used conditionals in C/C++, and they enable you to execute zero or one conditional statement among many such dependent conditional statements.
+ Task
+
+Given a positive integer denoting , do the following:
+
+If , print the lowercase English word corresponding to the number (e.g., one for , two for , etc.).
+If , print Greater than 9.*/
+ 
+#include <stdio.h>
+
+
+
+int main() {
+    
+    short number;
+    
+    scanf("%hd", &number);
+    
+    
+    if (number > 9) {
+        printf("Greater than 9\n");
+    } else {
+        
+        if (number == 1) {
+            printf("one\n");
+        }
+        
+        if (number == 2) {
+            printf("two\n");
+        }
+        
+        if (number == 3) {
+            printf("three\n");
+        }
+        
+        if (number == 4) {
+            printf("four\n");
+        }
+        
+        if (number == 5) {
+            printf("five\n");
+        }
+        
+        if (number == 6) {
+            printf("six\n");
+        }
+        
+        if (number == 7) {
+            printf("seven\n");
+        }
+        
+        if (number == 8) {
+            printf("eight\n");
+        }
+        
+        if (number == 9) {
+            printf("nine\n");
+        }
+    }
+    
+    
+    return 0;
+}
+
