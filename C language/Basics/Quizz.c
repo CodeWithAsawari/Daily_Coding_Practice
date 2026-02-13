@@ -266,3 +266,19 @@ year = 2024;
 Expected Output:
 
 2024 is a LEAP YEAR.*/
+#include <stdio.h>
+
+int main() {
+    int year;
+    year = 2024;
+
+    // Leap year conditions:
+    // (Divisible by 400) OR (Divisible by 4 AND Not divisible by 100)
+    if ((year % 400 == 0) || (year % 4 == 0 && year % 100 != 0)) {
+        printf("%d is a LEAP YEAR.\n", year);
+    } else {
+        printf("%d is NOT a leap year.\n", year);
+    }
+
+    return 0;
+}
