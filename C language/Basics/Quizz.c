@@ -203,3 +203,66 @@ printf("The character entered is: %c\n",A);
 printf("The ASCII value of '%c' is: %d\n",A,A);
 
 }*/
+/*Exercise 9: Check Even or Odd
+Practice Problem: Write a C program to determines whether given integer is even or odd.
+
+Given:
+
+int num;
+num = 12;
+Expected Output:
+
+12 is an EVEN number.*/
+/*#include<stdio.h>
+int main(){
+int num;
+num=12;
+if (num%2==0){
+printf("%d is an EVEN number",num);}
+else{
+    printf("%d is an ODD number",num);
+}
+return 0;
+}*/
+/*Exercise 10: Find Largest of Three Numbers
+Practice Problem: Write a C program to find and print the largest of given three numbers (A, B, and C).
+
+Given:
+
+int A, B, C;
+A = 10;
+B = 30;
+C = 20;
+Expected Output:
+
+B (30) is the largest number.*/
+/*#include<stdio.h>
+int main(){
+int A,B,C;
+A=10;
+B=30;
+C=20;
+if (A>=B && A>=C){
+    printf("A(%d)is the largest number",A);
+
+}
+else if(B>=A && B>=C){
+printf("B(%d)is the largest number",B);
+}
+else{
+    printf("C(%d)is the largest number",C);
+}
+return 0;
+}*/
+/* Exercise 11: Leap Year Check
+Practice Problem: Write a C program to determine if a given year is a leap year.
+
+Leap year: A year is a leap year if it is divisible by 400, OR if it is divisible by 4 but NOT by 100. Use the modulo operator (%) and the logical OR (||) and logical AND (&&) operators.
+
+Given:
+
+int year;
+year = 2024;
+Expected Output:
+
+2024 is a LEAP YEAR.*/
