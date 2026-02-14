@@ -376,3 +376,25 @@ printf("%d",i);
 printf("\n");
 return 0;
 }
+/*Exercise 14: Print Numbers in Reverse (while loop)
+Practice Problem: Write a C program to print numbers from 10 down to 1 in descending order using a while loop.
+
+Expected Output:
+
+Numbers in reverse order:
+10 9 8 7 6 5 4 3 2 1*/
+#include <stdio.h>
+
+int main() {
+    int i = 10;  
+
+    printf("Numbers in reverse order:\n");
+    
+     
+        printf("%d ", i);
+        i--;  
+    }
+    printf("\n");
+
+    return 0;
+}
