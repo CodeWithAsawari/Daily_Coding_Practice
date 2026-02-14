@@ -266,6 +266,7 @@ year = 2024;
 Expected Output:
 
 2024 is a LEAP YEAR.*/
+/*
 #include <stdio.h>
 
 int main() {
@@ -281,162 +282,9 @@ int main() {
     }
 
     return 0;
-}
-Home » C Programming Exercises » Basic C Programming Exercises for Beginners: 50+ Coding Problems with Solutions
-Basic C Programming Exercises for Beginners: 50+ Coding Problems with Solutions
-Updated on: January 7, 2026 | Leave a Comment
+}*/
 
-This comprehensive guide provides 50+ basic C programming exercises designed specifically for beginners.
-
-These coding problems are structured to help you practice core skills incrementally. Each exercise includes a Practice Problem, Hint, Solution code, and detailed Explanation, ensuring you don’t just copy code, but genuinely understand how and why it works.
-
-Also, See: C Programming Exercises with 9 topic-wise sets and 275+ practice questions.
-
-What You’ll Practice
-The exercises cover the following core topics:
-
-Fundamentals: Basic I/O, Variable Declaration, Arithmetic Operators, Type Casting.
-Conditional Statement and Looping: if-else, else-if, switch, for, while, do-while loops. Used for Factorial, Fibonacci, Palindrome, Prime Check, and more.
-Data Structures: Arrays, Strings, and Structures (including nested and arrays of structs).
-Simple Functions: Definition/Calling, void vs. Return Type, Functions for Arithmetic/Array tasks.
-Advanced Basics: Pointers (declaration, dereferencing, pass by reference, pointer arithmetic) and basic File Handling.
-Use Online C Compiler to solve exercises.
-
-+ Table Of Contents (53 Exercises)
-Exercise 1: Float Input/Output
-Practice Problem: Write a C program that takes a floating-point number (a decimal number, like 3.14159) from the user and prints it, formatted to display with only two decimal places.
-
-Expected Output:
-
-Enter a floating-point number (e.g., 3.14159): 75.35678
-The number rounded to two decimal places is: 75.36
-+ Hint
-+ Show Solution
-Exercise 2: Calculate Sum
-Practice Problems: Write a C program that prompts the user to enter two separate integers, calculates their sum, and then prints the result.
-
-Expected Output:
-
-Enter the first integer: 10
-Enter the second integer: 20
-The sum of 10 and 20 is: 30
-+ Hint
-+ Show Solution
-Exercise 3: Arithmetic Operations
-Practice Problem: Write a C program that calculates and prints the sum, difference, product, and quotient (division) of two integers.
-
-Given:
-
-int a, b;
-a = 10;
-b = 20;
-Expected Output:
-
-Sum: 20 + 10 = 30
-Difference: 20 - 10 = 10
-Product: 20 * 10 = 200
-Quotient: 20 / 10 = 2.00
-+ Hint
-+ Show Solution
-Exercise 4: Circumference/Area of a Circle
-Practice Problem: Write a C program to calculate both the area and circumference of a circle, given its radius. Use a pre-defined constant for π with value 3.14159.
-
-Given:
-
-float radius;
-radius = 5;
-Expected Output:
-
-Area of the circle: 78.540
-Circumference of the circle: 31.416
-+ Hint
-+ Show Solution
-Exercise 5: Simple Interest
-Practice Problem: Calculate simple interest for a loan, given the Principal amount (P), Rate of interest (R), and Time in years (T) as input.
-
-Given:
-
-float principal, rate, time;
-principal = 1000;
-rate = 8;
-time = 3;
-Expected Output:
-
-Simple Interest is: 240.00
-+ Hint
-+ Show Solution
-Exercise 6: Swapping Numbers
-Practice Problem: Write a C program to read two integer values, A and B, and then swap their contents so that A holds the original value of B, and B holds the original value of A. Use a third, temporary variable.
-
-Given:
-
-int A, B;
-A = 10;
-B = 20;
-Expected Output:
-
---- Before Swap ---
-A = 10, B = 20
-
---- After Swap ---
-A = 20, B = 10
-+ Hint
-+ Show Solution
-Exercise 7: Swapping Without Third Variable
-Practice Problem: Write a C program swap two integer values, A and B, without using a third temporary variable.
-
-Given:
-
-int A, B;
-A = 10;
-B = 20;
-Expected Output:
-
---- Before Swap ---
-A = 10, B = 20
-
---- After Swap ---
-A = 20, B = 10
-+ Hint
-+ Show Solution
-Exercise 8: ASCII Value
-Practice Problem: Write a C program that prompts the user to enter a single character and prints its corresponding ASCII (American Standard Code for Information Interchange) value.
-
-Expected Output:
-
-Enter a character: A
-The character entered is: A
-The ASCII value of 'A' is: 65
-+ Hint
-+ Show Solution
-Exercise 9: Check Even or Odd
-Practice Problem: Write a C program to determines whether given integer is even or odd.
-
-Given:
-
-int num;
-num = 12;
-Expected Output:
-
-12 is an EVEN number.
-+ Hint
-+ Show Solution
-Exercise 10: Find Largest of Three Numbers
-Practice Problem: Write a C program to find and print the largest of given three numbers (A, B, and C).
-
-Given:
-
-int A, B, C;
-A = 10;
-B = 30;
-C = 20;
-Expected Output:
-
-B (30) is the largest number.
-
-+ Hint
-+ Show Solution
-Exercise 11: Leap Year Check
+/*Exercise 11: Leap Year Check
 Practice Problem: Write a C program to determine if a given year is a leap year.
 
 Leap year: A year is a leap year if it is divisible by 400, OR if it is divisible by 4 but NOT by 100. Use the modulo operator (%) and the logical OR (||) and logical AND (&&) operators.
@@ -448,10 +296,8 @@ year = 2024;
 Expected Output:
 
 2024 is a LEAP YEAR.
-+ Hint
-Use the modulo operator (%) and the logical OR (||) and logical AND (&&) operators.
-
-+ Show Solution
+ */
+/*
 #include <stdio.h>
 
 int main() {
@@ -467,7 +313,7 @@ int main() {
     }
 
     return 0;
-}
+}*/
   /*
 
 Exercise 12: Simple Calculator using switch
@@ -478,6 +324,7 @@ Expected Output:
 Enter operator (+, -, *, /): *
 Enter two operands: 10 20
 10.00 * 20.00 = 200.00*/
+/*
 #include <stdio.h>
 
 int main() {
@@ -512,4 +359,20 @@ int main() {
     }
 
     return 0;
+} */
+/*Exercise 13: Print Natural Numbers (for loop)
+Practice Problem: Write a C program to print the first 10 natural numbers (1 to 10) in ascending order using a for loop.
+
+Expected Output:
+
+The first 10 natural numbers are:
+1 2 3 4 5 6 7 8 9 10 */
+#include<stdio.h>
+int main(){
+int i;
+for(i=1;i<=10;i++){
+printf("%d",i);
+}
+printf("\n");
+return 0;
 }
