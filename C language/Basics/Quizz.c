@@ -398,3 +398,23 @@ int main() {
 
     return 0;
 }
+/*Exercise 15: Sum of Natural Numbers
+Practice Problem: Write a C program to calculate and print the sum of the first N natural numbers.
+
+Given:
+
+int N;
+N = 10;
+Expected Output:
+
+The sum of the first 10 natural numbers is: 55*/
+ #include<stdio.h>
+ int main(){
+     int N,i,sum=0;
+     N=10;
+     for(i=1;i<=N;i++){
+         sum=sum+i;
+     }
+     printf("The sum of the first %d natural numbers are: %d",N,sum);
+     return 0;
+ }
