@@ -418,3 +418,19 @@ The sum of the first 10 natural numbers is: 55*/
      printf("The sum of the first %d natural numbers are: %d",N,sum);
      return 0;
  }
+ /*Exercise 16: Print odd numbers from 1 to 20
+Practice Problem: Write a C program to print odd numbers between 1 and 20 using a do...while loop.
+
+Expected Output:
+
+1 3 5 7 9 11 13 15 17 19*/
+ #include<stdio.h>
+ int main(){
+     int i=1;
+     do{
+         printf("%d ",i);
+         i+=2;
+     }
+     while(i<=20);
+     return 0;
+ }
