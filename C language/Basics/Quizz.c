@@ -586,3 +586,26 @@ int num = 121
 Expected Output:
 
 121 is a PALINDROME*/
+#include <stdio.h>
+
+int main() {
+    int num = 121, original_num, reversed_num = 0, remainder;
+    
+    original_num = num; // Crucial: save the original value
+
+    // Logic to reverse the number
+    while (num != 0) {
+        remainder = num % 10;
+        reversed_num = reversed_num * 10 + remainder;
+        num /= 10;
+    }
+
+    // Check if the original and reversed numbers are the same
+    if (original_num == reversed_num) {
+        printf("%d is a PALINDROME.\n", original_num);
+    } else {
+        printf("%d is NOT a palindrome.\n", original_num);
+    }
+
+    return 0;
+}
