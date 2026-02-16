@@ -551,3 +551,13 @@ The number 3456 has 4 digits.*/
      
      
  }
+ /*Exercise 21: Reverse a Number
+Practice Problem: Write a C program to reverse a given integer (e.g., 1234 becomes 4321).
+
+Given:
+
+int num = 123
+Expected Output:
+
+The reverse of 123 is: 321*/
+ 
