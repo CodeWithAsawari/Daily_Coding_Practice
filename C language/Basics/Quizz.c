@@ -434,3 +434,93 @@ Expected Output:
      while(i<=20);
      return 0;
  }
+ /*Exercise 17: Multiplication Table
+  Practice Problem: Write a C program to print the multiplication table of a given integer N from 1 × N up to 10 × N.
+
+Given:
+
+int N;
+N = 2;
+Expected Output:
+
+Multiplication Table for 2:
+2 x 1 = 2
+2 x 2 = 4
+2 x 3 = 6
+....
+2 x 10 = 20*/
+#include <stdio.h>
+
+int main() {
+    int N,i;
+    N=2;
+    printf("Multiplication Table for 2:\n",N);
+    for(i=1;i<=10;i++){
+        printf("%d*%d=%d\n",N,i,N*i);
+    }
+
+    return 0;
+}
+  
+ /*Exercise 18: Do-While Menu
+Create a simple menu-driven program that displays options (“1. Greet”, “2. Say Goodbye”, “3. Exit”). Use a do-while loop and a switch statement to repeatedly show the menu and process the user’s choice until they select the ‘Exit’ option.
+ */
+ #include <stdio.h>
+
+int main() {
+ int choice;
+ do{
+     printf("\n ----Menu----\n");
+     printf("1.Greet\n");
+     printf("2.Say Goodbye\n");
+     printf("3.Exit\n");
+     printf("Enter your choice(1-3):");
+     scanf("%d",&choice);
+     
+     switch(choice){
+         case 1:
+         printf("Hello!Welcome to the program.\n");
+         break;
+         
+         case 2:
+         printf("Goodbye!Have a nice day.\n");
+         break;
+         
+         case 3:
+         printf("Exiting program.Thank you!\n");
+         break;
+         
+         default:
+         printf("Invalid choice.Please enter 1,2,or 3.\n");
+    }
+ }
+ while(choice!=3);
+ return 0;
+ }
+
+  /*Exercise 19: Factorial of a Number
+Practice Problem: Write a C program to calculate the factorial of a given non-negative integer N. (The factorial of N is the product of all positive integers less than or equal to N, denoted N!).
+Given:
+
+int N;
+N = 5;
+Expected Output:
+
+The factorial of 5 is: 120*/
+ #include<stdio.h>
+ int main(){
+     int i,N;
+     N=5;
+     long long fact=1;
+     if(N<0){
+         printf("Error:The factorial for negative integer is not defined");
+     }
+     else {
+         for(i=1;i<=N;i++){
+             fact*=i;
+         }
+         printf("The factorial of %d is: %d",N,fact);
+     }
+     return 0;
+ }
+ 
