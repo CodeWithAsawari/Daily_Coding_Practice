@@ -523,4 +523,31 @@ The factorial of 5 is: 120*/
      }
      return 0;
  }
- 
+ /*Exercise 20: Count Digits
+ Practice Problem: Write a C program to counts the total number of digits in a given number.
+
+Given:
+
+long long num = 3456;
+Expected Output:
+
+The number 3456 has 4 digits.*/
+ #include<stdio.h>
+ int main(){
+    int num=3456;
+     int count =0;
+     int original_num=num;
+     if(num==0){
+         count=1;
+     }
+     else{
+         while(num>0){
+             num/=10;
+             count++;
+         }
+     }
+     printf("The number %d has %d digits.\n",original_num,count);
+     return 0;
+     
+     
+ }
