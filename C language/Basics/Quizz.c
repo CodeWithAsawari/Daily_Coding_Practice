@@ -560,4 +560,20 @@ int num = 123
 Expected Output:
 
 The reverse of 123 is: 321*/
- 
+ #include <stdio.h>
+
+int main() {
+    int num = 123, reversed_num = 0, remainder;
+    
+    int original_num = num;
+
+    while (num != 0) {
+        remainder = num % 10; // 1. Extract the last digit
+        reversed_num = reversed_num * 10 + remainder; // 2. Build the reversed number
+        num /= 10; // 3. Remove the last digit
+    }
+
+    printf("The reverse of %d is: %d\n", original_num, reversed_num);
+
+    return 0;
+}
