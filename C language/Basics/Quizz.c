@@ -650,3 +650,23 @@ Expected Output:
 
 Fibonacci Series up to 8 terms:
 0, 1, 1, 2, 3, 5, 8, 13,*/
+#include <stdio.h>
+
+int main() {
+    int N=8, i;
+    int t1 = 0, t2 = 1;
+    int nextTerm = t1 + t2;
+
+    printf("Fibonacci Series up to %d terms:\n%d, %d, ", N, t1, t2);
+
+    // Start loop from i=3 since the first two terms are printed already
+    for (i = 3; i <= N; ++i) {
+        printf("%d, ", nextTerm);
+        t1 = t2;
+        t2 = nextTerm;
+        nextTerm = t1 + t2;
+    }
+    printf("\n");
+
+    return 0;
+}
