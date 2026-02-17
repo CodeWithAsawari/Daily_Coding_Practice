@@ -619,3 +619,23 @@ Expected Output:
 
 Odd numbers from 1 to 20:
 1 3 5 7 9 11 13 15 17 19*/
+#include <stdio.h>
+
+int main() {
+    int N = 20, i;
+
+    printf("Odd numbers from 1 to %d:\n", N);
+
+    for (i = 1; i <= N; i++) {
+        // Control flow check for even numbers
+        if (i % 2 == 0) {
+            continue; // Skips the rest of the loop body for even numbers
+        }
+
+        // This line only executes if 'i' is ODD
+        printf("%d ", i);
+    }
+    printf("\n");
+
+    return 0;
+}
