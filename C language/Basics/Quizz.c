@@ -390,7 +390,7 @@ int main() {
 
     printf("Numbers in reverse order:\n");
     
-     
+     while(i >= 1) {
         printf("%d ", i);
         i--;  
     }
@@ -608,4 +608,3 @@ int main() {
     }
 
     return 0;
-}
