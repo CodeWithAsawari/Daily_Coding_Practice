@@ -670,4 +670,5 @@ int main() {
 
     return 0;
 }
-/*Exercise 25: Solid Rectangle Pattern*/
+/*Exercise 25: Solid Rectangle Pattern
+Practice Problem: Write a C program that uses nested for-loops to print a solid rectangle pattern of asterisks (*) with 3 rows and 3 columns.*/
