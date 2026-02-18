@@ -710,3 +710,26 @@ Enter element 4: 40
 Enter element 5: 50
 
 Elements stored in the array: 10 20 30 40 50*/
+#include <stdio.h>
+
+int main() {
+    const int SIZE = 5;
+    int arr[SIZE];
+    int i;
+
+    // 1. Input Loop
+    printf("Enter 5 integers:\n");
+    for (i = 0; i < SIZE; i++) {
+        printf("Enter element %d: ", i + 1);
+        scanf("%d", &arr[i]); // Read into the address of the array element
+    }
+
+    // 2. Output Loop
+    printf("\nElements stored in the array: ");
+    for (i = 0; i < SIZE; i++) {
+        printf("%d ", arr[i]);
+    }
+    printf("\n");
+
+    return 0;
+}
