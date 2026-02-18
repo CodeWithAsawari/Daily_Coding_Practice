@@ -680,3 +680,19 @@ Expected Output:
 ***
 ***
 *** */
+#include <stdio.h>
+
+int main() {
+    int rows=3, cols=3, i, j;
+
+    // Outer loop for rows
+    for (i = 1; i <= rows; i++) {
+        // Inner loop for columns (prints stars in a single row)
+        for (j = 1; j <= cols; j++) {
+            printf("*");
+        }
+        printf("\n"); // Move to the next line after a row is complete
+    }
+
+    return 0;
+}
