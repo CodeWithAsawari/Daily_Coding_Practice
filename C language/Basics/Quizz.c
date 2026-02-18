@@ -670,3 +670,4 @@ int main() {
 
     return 0;
 }
+/*Exercise 25: Solid Rectangle Pattern*/
