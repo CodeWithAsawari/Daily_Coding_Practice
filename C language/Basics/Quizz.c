@@ -733,3 +733,32 @@ int main() {
 
     return 0;
 }
+/*
+Exercise 27: Sum of Array Elements
+Practice Problem: Write a C program to calculate and print the sum of all elements in a pre-initialized integer array of size 5.
+
+Given:
+
+int arr[5] = {10, 5, 20, 15, 30};
+
+Expected Output:
+
+The elements are: 10, 5, 20, 15, 30
+The sum of all array elements is: 80
+*/
+#include <stdio.h>
+
+int main() {
+    int arr[5] = {10, 5, 20, 15, 30};
+    int i;
+    int sum = 0; // Accumulator variable
+
+    for (i = 0; i < 5; i++) {
+        sum = sum + arr[i]; // Add current element to the sum
+    }
+
+    printf("The elements are: 10, 5, 20, 15, 30\n");
+    printf("The sum of all array elements is: %d\n", sum);
+
+    return 0;
+}
