@@ -1,5 +1,22 @@
-package Daily_Coding_Practice.Java Language.NPTEL.Week05;
+import java.util.Scanner;
+  
+  public class Assignment3{
+  public static void main(String[] args) { 
+      int a, b;
+      Scanner input = new Scanner(System.in);
+       // Read any two values for a and b
+       int result;  
 
-public class Assignment3 {
+       a = input.nextInt();
+       b = input.nextInt();
+       try {
+              result = a/b;
+              System.out.print(result);
+     	     }
+           
+          catch (ArithmeticException e) {
+            System.out.print("Exception caught: Division by zero.");
+          }
     
 }
+  }
