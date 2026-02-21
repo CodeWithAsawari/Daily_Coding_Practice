@@ -2,7 +2,7 @@
 import java.util.Scanner;
 import java.util.InputMismatchException;
 
-public class W05_P4 {
+public class Assignment4 {
   public static void main(String[] args) {
       Scanner sc = new Scanner(System.in); 
 	int length = sc.nextInt(); 
