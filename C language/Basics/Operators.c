@@ -91,3 +91,18 @@ int main(){
 
     return 0;
 }
+// Logical Operators
+/*&&	Logical AND (returns true if both operands are true)
+||	Logical OR (returns true if at least one operand is true)
+!	Logical NOT (returns true if the operand is false)*/
+//Example:
+#include<stdio.h>
+int main(){
+    int a=10;
+    int b=20;
+    printf("(a > 5) && (b < 30): %d\n",(a > 5) && (b < 30)); // Outputs 1 (true)
+    printf("(a > 15) || (b < 30): %d\n",(a > 15) || (b < 30)); // Outputs 1 (true)
+    printf("!(a > 5): %d\n",!(a > 5)); // Outputs 0 (false)
+    printf("!(b < 30): %d\n",!(b < 30)); // Outputs 0 (false)
+    return 0;
+}
