@@ -106,3 +106,17 @@ int main(){
     printf("!(b < 30): %d\n",!(b < 30)); // Outputs 0 (false)
     return 0;
 }
+// Operator Precedence
+
+/*Order of Operations
+Here are some common operators in C, from highest to lowest priority:
+
+() - Parentheses
+*, /, % - Multiplication, Division, Modulus
++, - - Addition, Subtraction
+>, <, >=, <= - Comparison
+==, != - Equality
+&& - Logical AND
+|| - Logical OR
+= - Assignment*/
+ 
