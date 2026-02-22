@@ -65,6 +65,29 @@ int main(){
     printf("a = %d\n",a); // Outputs 0 (since 0 in binary is 00, left shifting by 2 positions results in 0000 which is still 0 in decimal)
     a>>=1; // Equivalent to a = a >> 1
     printf("a = %d\n",a); // Outputs 0 (since 0 in binary is 00, right shifting by 1 position results in 0000 which is still 0 in decimal)
-    
+
+    return 0;
+}
+//Comparison Operators
+/*
+==	Equal to (checks if two values are equal)
+!=	Not equal to(checks if two values are not equal)
+>	Greater than(checks if the left value is greater than the right value)
+<	Less than(checks if the left value is less than the right value)
+>=	Greater than or equal to(checks if the left value is greater than or equal to the right value)
+<=	Less than or equal to(checks if the left value is less than or equal to the right value)
+*/
+//Example:
+#include<stdio.h>
+int main(){
+    int a=10;
+    int b=20;
+    printf("a == b: %d\n",a==b); // Outputs 0 (false)
+    printf("a != b: %d\n",a!=b); // Outputs 1 (true)
+    printf("a > b: %d\n",a>b); // Outputs 0 (false)
+    printf("a < b: %d\n",a<b); // Outputs 1 (true)
+    printf("a >= b: %d\n",a>=b); // Outputs 0 (false)
+    printf("a <= b: %d\n",a<=b); // Outputs 1 (true)
+
     return 0;
 }
