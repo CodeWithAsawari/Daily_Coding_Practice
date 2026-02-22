@@ -114,4 +114,30 @@ Example */
 int myNum = 15;
 printf("%d", myNum); // Outputs 15
 
+//Different data types use different format specifiers
 
+Example
+// Create variables
+int myNum = 15;            // Integer (whole number)
+float myFloatNum = 5.99;   // Floating point number
+char myLetter = 'D';       // Character
+
+// Print variables
+printf("%d\n", myNum);
+printf("%f\n", myFloatNum);
+printf("%c\n", myLetter);
+
+//Change Variable Values
+
+int a=2;
+int b=9;
+a=b;
+printf("%d",a); // Outputs 9 because a now holds the value of b
+
+/*The general rules for naming variables are:
+
+Names can contain letters, digits and underscores
+Names must begin with a letter or an underscore (_)
+Names are case-sensitive (myVar and myvar are different variables)
+Names cannot contain whitespaces or special characters like !, #, %, etc.
+Reserved words (such as int) cannot be used as names*/
