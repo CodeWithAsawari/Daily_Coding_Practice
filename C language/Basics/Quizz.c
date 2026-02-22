@@ -773,3 +773,29 @@ Expected Output:
 Array elements: {55, 12, 89, 7, 42, 60}
 Maximum element: 89
 Minimum element: 7*/
+#include <stdio.h>
+
+int main() {
+    int arr[6] = {55, 12, 89, 7, 42, 60};
+    int i;
+    
+    // Initialize max and min with the first element
+    int max = arr[0];
+    int min = arr[0];
+
+    // Loop starts from the second element (index 1)
+    for (i = 1; i < 6; i++) {
+        if (arr[i] > max) {
+            max = arr[i]; // New maximum found
+        }
+        if (arr[i] < min) {
+            min = arr[i]; // New minimum found
+        }
+    }
+
+    printf("Array elements: {55, 12, 89, 7, 42, 60}\n");
+    printf("Maximum element: %d\n", max);
+    printf("Minimum element: %d\n", min);
+
+    return 0;
+}
