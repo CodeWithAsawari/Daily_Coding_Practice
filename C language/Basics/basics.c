@@ -167,3 +167,10 @@ int	        2 or 4 bytes	   Stores whole numbers, without decimals
 float	    4 bytes	           Stores fractional numbers, containing one or more decimals. Sufficient for storing 6-7 decimal digits
 double	    8 bytes        	   Stores fractional numbers, containing one or more decimals. Sufficient for storing 15 decimal digits
 char	    1 byte	           Stores a single character/letter/number, or ASCII values	*/
+
+
+//The char Type
+/*The char data type is used to store a single character.
+
+The character must be surrounded by single quotes, like 'A' or 'c', and we use the %c format specifier to print it:
+*/
