@@ -141,3 +141,29 @@ Names must begin with a letter or an underscore (_)
 Names are case-sensitive (myVar and myvar are different variables)
 Names cannot contain whitespaces or special characters like !, #, %, etc.
 Reserved words (such as int) cannot be used as names*/
+
+//Example:
+#include<stdio.h>
+int main(){
+int length;
+int width;
+int area;
+area=length*width;
+printf("Enter length:");
+scanf("%d",&length);
+printf("Enter width:");
+scanf("%d",&width);
+printf("Area of rectangle is:%d",area);
+return 0;
+}
+//C Data Types
+/*Basic Data Types
+The data type specifies the size and type of information the variable will store.
+
+In this tutorial, we will focus on the most basic ones:
+
+Data Type   	Size	       Description	
+int	        2 or 4 bytes	   Stores whole numbers, without decimals	
+float	    4 bytes	           Stores fractional numbers, containing one or more decimals. Sufficient for storing 6-7 decimal digits
+double	    8 bytes        	   Stores fractional numbers, containing one or more decimals. Sufficient for storing 15 decimal digits
+char	    1 byte	           Stores a single character/letter/number, or ASCII values	*/
