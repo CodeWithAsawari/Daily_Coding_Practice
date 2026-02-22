@@ -195,3 +195,14 @@ For example, 35e3 means 35 × 10³ = 35000.*/
 
 float d = 35e3; // This is 35 × 10³
 printf("%f", d); // Outputs 35000.000000
+
+
+//C Decimal Precision
+
+//Set Decimal Precision
+//If you want to remove the extra zeros (set decimal precision), you can use a dot (.) followed by a number that specifies how many digits that should be shown after the decimal point:
+
+float e = 3.14159;
+printf("%.1f", e); // Outputs 3.1 (rounded to 1 decimal place)
+printf("%.2f", e); // Outputs 3.14 (rounded to 2 decimal places)
+printf("%.3f", e); // Outputs 3.142 (rounded to 3 decimal places)
