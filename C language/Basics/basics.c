@@ -174,3 +174,24 @@ char	    1 byte	           Stores a single character/letter/number, or ASCII val
 
 The character must be surrounded by single quotes, like 'A' or 'c', and we use the %c format specifier to print it:
 */
+
+//Numeric Types
+/*Use int when you need to store a whole number without decimals, like 35 or 1000, and float or double when you need a floating point number (with decimals), like 9.99 or 3.14515.
+*/
+int a=3;
+printf("%d",a); // Outputs 3
+
+float b=3.14;
+printf("%f",b); // Outputs 3.140000
+
+double c=3.141592653589793;
+printf("%lf",c); // Outputs 3.141593 (rounded to 6 decimal places)
+//Scientific Numbers
+/*In C, you can write very large or very small floating-point numbers using scientific notation.
+
+This is done using the letter e (or E), which stands for "times 10 to the power of".
+
+For example, 35e3 means 35 × 10³ = 35000.*/
+
+float d = 35e3; // This is 35 × 10³
+printf("%f", d); // Outputs 35000.000000
