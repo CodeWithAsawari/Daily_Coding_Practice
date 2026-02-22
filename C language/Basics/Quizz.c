@@ -808,3 +808,28 @@ Expected Output:
 
 Enter the element to search: 30
 Element 30 found at index 2.*/
+#include <stdio.h>
+
+int main() {
+    int arr[5] = {10, 25, 30, 45, 50};
+    int key, i;
+    int found_index = -1; // -1 indicates not found
+
+    printf("Enter the element to search: ");
+    scanf("%d", &key);
+
+    for (i = 0; i < 5; i++) {
+        if (arr[i] == key) {
+            found_index = i; // Store the index where it was found
+            break;           // Element found, exit loop immediately
+        }
+    }
+
+    if (found_index != -1) {
+        printf("Element %d found at index %d.\n", key, found_index);
+    } else {
+        printf("Element %d not found in the array.\n", key);
+    }
+
+    return 0;
+}
