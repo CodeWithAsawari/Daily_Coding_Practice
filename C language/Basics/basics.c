@@ -206,3 +206,18 @@ float e = 3.14159;
 printf("%.1f", e); // Outputs 3.1 (rounded to 1 decimal place)
 printf("%.2f", e); // Outputs 3.14 (rounded to 2 decimal places)
 printf("%.3f", e); // Outputs 3.142 (rounded to 3 decimal places)
+
+//C The sizeof Operator
+
+/*Data Type 	Size
+int	        2 or 4 bytes
+float	     4 bytes
+double	     8 bytes
+char	     1 byte
+The memory size refers to how much space a type occupies in the computer's memory.
+
+To actually get the size (in bytes) of a data type or variable, use the sizeof operator:
+Example:*/
+int myInt;
+printf("%zu", sizeof(myInt)); // Outputs the size of an int variable (2 or 4 bytes depending on the system)
+/*Note that we use the %zu format specifier to print the result, instead of %d. This is because the compiler expects the sizeof operator to return a value of type size_t, which is an unsigned integer type. On some computers it might work with %d, but it is safer and more portable to use %zu, which is specifically designed for printing size_t values.*/
