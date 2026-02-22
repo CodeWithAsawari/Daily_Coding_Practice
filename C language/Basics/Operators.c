@@ -26,3 +26,45 @@ int main(){
         return 0;
 } 
 
+//Assignment Operators
+/*
+=	Assigns a value to a variable
++=	Adds and assigns a value to a variable
+-=	Subtracts and assigns a value to a variable
+*=	Multiplies and assigns a value to a variable
+/=	Divides and assigns a value to a variable
+%=	Modulus and assigns a value to a variable
+&=	Bitwise AND and assigns a value to a variable
+|=	Bitwise OR and assigns a value to a variable
+^=	Bitwise XOR and assigns a value to a variable
+<<=	Left shift and assigns a value to a variable
+>>=	Right shift and assigns a value to a variable
+
+*/
+//Example:
+#include<stdio.h>
+int main(){
+    int a=10;
+    a+=5; // Equivalent to a = a + 5
+    printf("a = %d\n",a); // Outputs 15
+    a-=3; // Equivalent to a = a - 3
+    printf("a = %d\n",a); // Outputs 12
+    a*=2; // Equivalent to a = a * 2
+    printf("a = %d\n",a); // Outputs 24
+    a/=4; // Equivalent to a = a / 4
+    printf("a = %d\n",a); // Outputs 6
+    a%=4; // Equivalent to a = a % 4
+    printf("a = %d\n",a); // Outputs 2
+    a&=1; // Equivalent to a = a & 1
+    printf("a = %d\n",a); // Outputs 0 (since 2 in binary is 10 and 1 in binary is 01, the bitwise AND is 00 which is 0 in decimal)
+    a|=1; // Equivalent to a = a | 1
+    printf("a = %d\n",a); // Outputs 1 (since 0 in binary is 00 and 1 in binary is 01, the bitwise OR is 01 which is 1 in decimal)
+    a^=1; // Equivalent to a = a ^ 1
+    printf("a = %d\n",a); // Outputs 0 (since 1 in binary is 01 and 1 in binary is 01, the bitwise XOR is 00 which is 0 in decimal)
+    a<<=2; // Equivalent to a = a << 2
+    printf("a = %d\n",a); // Outputs 0 (since 0 in binary is 00, left shifting by 2 positions results in 0000 which is still 0 in decimal)
+    a>>=1; // Equivalent to a = a >> 1
+    printf("a = %d\n",a); // Outputs 0 (since 0 in binary is 00, right shifting by 1 position results in 0000 which is still 0 in decimal)
+    
+    return 0;
+}
