@@ -833,3 +833,41 @@ int main() {
 
     return 0;
 }
+
+/*Exercise 30: Function for Even/Odd
+Practice Problem: Write a C function named check_even_odd that takes an integer as a parameter and prints whether it is “Even” or “Odd” directly within the function. Call this function from main().
+Given:
+
+int A = 42;
+int B = 17;
+Expected Output:
+
+Checking numbers...
+42 is EVEN.
+17 is ODD.
+*/
+#include <stdio.h>
+
+// Function signature is void, meaning it returns nothing
+void check_even_odd(int num) {
+    if (num % 2 == 0) {
+        printf("%d is EVEN.\n", num);
+    } else {
+        printf("%d is ODD.\n", num);
+    }
+}
+
+int main() {
+    int A = 42;
+    int B = 17;
+
+    printf("Checking numbers...\n");
+    
+    // Call the function for A
+    check_even_odd(A); 
+    
+    // Call the function for B
+    check_even_odd(B);
+
+    return 0;
+}
