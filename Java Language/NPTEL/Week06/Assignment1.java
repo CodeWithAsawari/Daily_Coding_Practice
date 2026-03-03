@@ -1,5 +1,11 @@
-package Daily_Coding_Practice.Java Language.NPTEL.Week06;
+ public class Assignment1 extends  Thread {
 
-public ded {
-    
+    public void run() {
+        System.out.print("Hello from Thread");
+    }  public static void main(String[] args) {
+        Assignment1 t = new Assignment1();
+        t.start();
+    }
 }
+    
+
