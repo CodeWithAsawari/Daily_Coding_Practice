@@ -910,3 +910,29 @@ int main() {
 
     return 0;
 }
+/*Exercise 32: String Length Calculation
+Practice Problem: Develop a C program that prompts the user to enter a string (a sequence of characters) and then calculates and prints the length of that string without using the built-in strlen() function.
+
+Expected Output:
+
+Enter a string: PYnative
+The length of the string is: 8*/
+#include <stdio.h>
+
+int main() {
+    char str[100];
+    int length = 0;
+
+    printf("Enter a string:\n ");
+    // Read string input (up to 99 characters)
+    scanf("%s", str); 
+
+    // Loop through the array until the null terminator is found
+    while (str[length] != '\0') {
+        length++;
+    }
+
+    printf("The length of the string is: %d\n", length);
+
+    return 0;
+}
