@@ -948,3 +948,26 @@ Expected Output:
 
 Source: Copy Me!
 Destination: Copy Me! */
+
+#include <stdio.h>
+
+int main() {
+    char source[] = "Copy Me!";
+    // Destination must be large enough to hold the source string + '\0'
+    char destination[20]; 
+    int i = 0;
+
+    // Loop until the null terminator of the source string is reached
+    while (source[i] != '\0') {
+        destination[i] = source[i];
+        i++;
+    }
+
+    // Essential: Add the null terminator to the destination string
+    destination[i] = '\0'; 
+
+    printf("Source: %s\n", source);
+    printf("Destination: %s\n", destination);
+
+    return 0;
+}
