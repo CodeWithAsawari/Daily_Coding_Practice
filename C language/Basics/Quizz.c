@@ -936,11 +936,3 @@ int main() {
 
     return 0;
 }
-/*Exercise 33: Copy String
-Practice Problem: Write a C program to copy the contents of one string (source) to another string (destination) manually without using the built-in strcpy() function.
-
-Given:
-
-char source[] = "Copy Me!";
-// Destination must be large enough to hold the source string + '\0'
-char destination[20];*/
